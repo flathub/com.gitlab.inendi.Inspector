@@ -19,5 +19,5 @@ modules:
       - cp -r files/* /app
     sources:
       - type: archive
-        url: https://inendi.gitlab.io/inspector/inendi-inspector_flatpak_4.9.9.tar.bz2
-        sha256: 1183333bc38f85d0f3870a1b7b8aab3b1649ab31f6c6b7d6dca79ec27116873c
+        url: https://inendi.gitlab.io/inspector/inendi-inspector_flatpak_4.9.10.tar.bz2
+        sha256: c8578df9acf03c0939822560d9483f7a3bc952c7272b4dba4bf7a2d84ae66cea
