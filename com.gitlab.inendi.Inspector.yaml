@@ -12,6 +12,7 @@ finish-args:
   - --filesystem=~/.inendi
   - --filesystem=/tmp
   - --device=dri
+  - --allow=devel
 modules:
   - name: inendi-inspector
     buildsystem: simple
@@ -19,5 +20,5 @@ modules:
       - cp -r files/* /app
     sources:
       - type: archive
-        url: https://inendi.gitlab.io/inspector/inendi-inspector_flatpak_4.9.10.tar.bz2
-        sha256: c8578df9acf03c0939822560d9483f7a3bc952c7272b4dba4bf7a2d84ae66cea
+        url: https://inendi.gitlab.io/inspector/inendi-inspector_flatpak_4.9.11.tar.xz
+        sha256: 2f6d5ed533c8ada13d8798f50ddf88ed4a089d7a7a4e7f5bf7ea56fa9ac34eed
