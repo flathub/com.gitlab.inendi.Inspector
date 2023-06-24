@@ -2,23 +2,20 @@ app-id: com.gitlab.inendi.Inspector
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
-command: inspector_launcher.sh
+command: squey_launcher.sh
 finish-args:
   - --socket=x11
   - --share=network
   - --share=ipc
   - --filesystem=host
-  - --filesystem=/opt/inendi
-  - --filesystem=~/.inendi
-  - --filesystem=/tmp
   - --device=dri
   - --allow=devel
 modules:
-  - name: inendi-inspector
+  - name: squey
     buildsystem: simple
     build-commands:
       - cp -r files/* /app
     sources:
       - type: archive
-        url: https://inendi.gitlab.io/inspector/inendi-inspector_flatpak_4.9.11.tar.xz
-        sha256: 2f6d5ed533c8ada13d8798f50ddf88ed4a089d7a7a4e7f5bf7ea56fa9ac34eed
+        url: https://gitlab.com/squey/squey/-/jobs/4534447947/artifacts/raw/public/squey_flatpak_.tar.xz
+        sha256: 8d3a49f6c410802d7dedcd744913d8e9cfa6bd66d1317989949b1ef4b552750c
